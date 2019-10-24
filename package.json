@@ -1,0 +1,27 @@
+{
+  "name": "book-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --recursive --exit --timeout 10000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.2.1",
+    "mockgoose": "^8.0.3",
+    "mongoose": "^5.7.3",
+    "path": "^0.12.7",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "request": "^2.88.0"
+  }
+}
