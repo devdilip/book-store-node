@@ -17,5 +17,6 @@ database.connect().then(() => {
   });
 });
 
+app.use("", require("./routes/auth"));
 
 module.exports = app;
