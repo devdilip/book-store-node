@@ -54,10 +54,12 @@ Ths api will give all book details from database.
 	content-type: application/json
 	
 
+
 - ### Purchase Book
 
+  This API will store the purchase collection with appropriate information.
 
-	
+    
 	Method: GET
 	Url: "/store/purchase/books?----params------"
 	Authorization: "Bearer jwt-token"
