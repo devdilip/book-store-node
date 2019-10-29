@@ -46,7 +46,7 @@ We can add a book in store using this API.
 
 - ### Get List Of Book
 
-Ths api will give all book details from database.
+This api will give all book details from database.
     
 	Method: GET
 	Url: "/store/list-of-book"
@@ -55,12 +55,10 @@ Ths api will give all book details from database.
 	
 
 
-
 - ### Purchase Book
 
-  This API will store the purchase collection with appropriate information.
-
-	
+This API will store the purchase collection with appropriate information.
+    
 	Method: GET
 	Url: "/store/purchase/books?----params------"
 	Authorization: "Bearer jwt-token"
@@ -70,8 +68,5 @@ Ths api will give all book details from database.
         email=<user_email>
     }
 	
-	
-
-
 
 
