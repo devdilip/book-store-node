@@ -3,7 +3,7 @@ const route = express.Router();
 const User = require("../schema/user");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const config = require("../config/authConfig");
+const config = require("../config/auth");
 
 route.post("/create/user", (req, res) => {
   let { password, name, email } = req.body;
