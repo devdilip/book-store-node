@@ -1,8 +1,7 @@
 ## API Documentation
 
 - ### Create User
-
--------------
+	In this api, we are checking empty email and password and user duplication after all checks we are sending the appropriate response.
 
     
 	Method: POST
@@ -17,7 +16,8 @@
 
 - ### Login
 
--------------
+	In this api, we are matching a password with a stored hashing password. if password and email are correct then we are sending a jwt token for API call validation.
+
     
 	Method: POST
 	Url: "/login"
@@ -29,8 +29,8 @@
 	
 
 - ### Add Book in Store
+	We can add a book in store using this API.
 
--------------
     
 	Method: POST
 	Url: "/store/add-book"
@@ -46,7 +46,7 @@
 
 - ### Get List Of Book
 
--------------
+Ths api will give all book details from database.
     
 	Method: GET
 	Url: "/store/list-of-book"
@@ -56,7 +56,6 @@
 
 - ### Purchase Book
 
--------------
     
 	Method: GET
 	Url: "/store/purchase/books?----params------"
