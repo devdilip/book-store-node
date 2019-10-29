@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const databaseCrediential = require("./databaseCrediential");
+const DATABASE_URI = databaseCrediential.DATABASE_URI;
 
 const connect = () => {
   return new Promise((resolve, reject) => {
@@ -9,7 +10,7 @@ const connect = () => {
 
       mockgoose.prepareStorage().then(() => {
         mongoose
-          .connect(databaseCrediential.DATABASE_URI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+          .connect(DATABASE_URI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
           .then((res, err) => {
             if (err) return reject(err);
             resolve();
@@ -17,7 +18,7 @@ const connect = () => {
       });
     } else {
       mongoose
-        .connect(databaseCrediential.DATABASE_URI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+        .connect(DATABASE_URI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
         .then((res, err) => {
           if (err) return reject(err);
           resolve();
