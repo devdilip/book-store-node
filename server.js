@@ -18,5 +18,6 @@ database.connect().then(() => {
 });
 
 app.use("", require("./routes/auth"));
+app.use("", require("./routes/bookstore"));
 
 module.exports = app;
